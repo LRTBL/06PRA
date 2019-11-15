@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_06PRA.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DEMOSTRACIÓN DE PÁGINA MAESTRA</title>
+
+    <style type="text/css">
+        .nuevoEstilo1 {
+            vertical-align: top;
+            background-color: C0C0C0;
+        }
+        .nuevoEstilo2 {
+            background-color: #999999;
+            height: 45px;
+            border-bottom-style: solid;
+            border-bottom-width: thick;
+            border-bottom-color: #336600;
+        }
+        .nuevoEstilo3 {
+            text-align: center;
+            height: 93px;
+            width: 96px;
+        }
+        .nuevoEstilo4 {
+            text-align: center;
+            height: 95px;
+        }
+        .auto-style2 {
+            width: 297px;
+            height: 110px;
+        }
+        .auto-style3 {
+            height: 114px;
+            width: 25px;
+        }
+        .auto-style4 {
+            height: 37px;
+        }
+        .auto-style5 {
+            height: 27px;
+        }
+        .auto-style6 {
+            vertical-align: top;
+            background-color: C0C0C0;
+            height: 444px;
+            width: 25px;
+        }
+        .auto-style7 {
+            height: 444px;
+        }
+    </style>
+
+</head>
+<body>
+    <form runat="server">
+       
+
+
+
+
+
+        
+
+    <table class="" style="width:100%;">
+      
+        <tr>
+            <td class="auto-style3" rowspan="2">
+                <img alt="" class="auto-style2" src="Content/logoucsm.PNG" /></td>
+            <td class="auto-style4" style="background-color: #689f38"> 
+                <img src="Content/images.png" align="right" style="margin-right:10px;" width="30" />
+            </td>
+        </tr>
+      
+        <tr>
+            <td class="auto-style5" style="background-color:gainsboro"> 
+                <h3>TITULO PAGINA</h3>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style6" style="vertical-align: top; ; ">
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            <td style="background-color:gainsboro" class="auto-style7">
+                    
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+            </asp:ContentPlaceHolder>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #1d2528; text-align:center;" >
+                <aside id="text-11" class="widget widget_text" style="text-align:center;"><h4 style="color:aliceblue;">Contáctanos</h4>			<div class="textwidget" style="color:aliceblue;">Campus central<br>
+Urb. San José s/n Umacollo<br>
+Arequipa - Perú<br>
+<b><a style="color:#f8aa1a;"  href="https://www.google.com.pe/maps/place/Universidad+Cat%C3%B3lica+De+Santa+Maria/@-16.4061786,-71.5498185,17z/data=!3m1!4b1!4m5!3m4!1s0x91424a8aab7dbfcf:0x32794c08084c8aad!8m2!3d-16.4061786!4d-71.5476298" target="_blank">Mapa</a></b><br>
+<i class="icon-call"></i>054-382038
+<br>
+<b><a style="color:#f8aa1a;" href="https://www.ucsm.edu.pe/directorio/" target="_blank">Anexos</a></b><br>
+
+</div>
+		</aside>
+
+            </td>
+        </tr>
+    </table>
+        
+
+    </form>
+    </body>
+</html>
