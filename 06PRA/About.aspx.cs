@@ -18,6 +18,8 @@ namespace Practica
         }
 
 
+
+
         protected void btnbuscar_Click(object sender, EventArgs e)
         {
           
