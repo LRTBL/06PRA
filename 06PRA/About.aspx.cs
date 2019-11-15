@@ -23,9 +23,13 @@ namespace Practica
           
             Label1.Text = "";
 
+
             string selectSQL = "SELECT * FROM CLIENTES WHERE CODIGO='" + txtcodigo.Text + "';";
+
             SqlConnection con = new SqlConnection(connectionstring);
+
             SqlCommand cmd = new SqlCommand(selectSQL, con);
+
             SqlDataReader dr;
             try
             {

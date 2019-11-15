@@ -15,9 +15,11 @@
             <asp:Button ID="btnbuscar" runat="server" Text="buscar" OnClick="btnbuscar_Click" />
 &nbsp;
                  <br />
+             
                  Nombres:
                  <asp:TextBox ID="txtnombre" runat="server"></asp:TextBox>
                  <br />
+            x
                  Dirección:
                  <asp:TextBox ID="txtdireccion" runat="server"></asp:TextBox>
                  <br />
